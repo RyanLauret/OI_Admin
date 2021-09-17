@@ -1,0 +1,46 @@
+
+img{
+    width: 300px;
+}
+
+.img{
+    text-align: center;
+}
+
+.boxinfo, .img{
+    /* border: solid 2px; */
+    width: 50%;
+}
+
+.boxinfo h1{
+    text-align: center;
+}
+
+.boxinfo p {
+    margin-left: 20px;
+}
+
+.boxinfo p:first-of-type{
+    margin-top: 15%;
+}
+
+
+.container{
+    border: solid 5px #307DF6 ;
+    border-radius: 25px;
+    padding: 50px;
+    margin-top: 1%;
+    display: flex ;
+}
+
+.pagination{
+    margin: auto;
+    width: 50%;
+    margin-top: 10%;
+}
+
+button{
+    margin: auto;
+}
+
+

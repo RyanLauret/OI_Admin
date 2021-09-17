@@ -1,0 +1,53 @@
+<head>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/connexion.css">
+    <link rel="stylesheet" href="./css/signin.css">
+</head>
+
+<body class="text-center">
+    <main class="form-signin">
+        <form>
+            <img class="mb-4" src="./img/logo_connect.png" alt="logo_connect">
+
+            <input type="email" id="inputEmail" class="form-control" placeholder="Email adress" required autofocus>
+            <input type="password" id="inputPassword" class="form-control" placeholder="Password" required autofocus>
+
+            <button type="button" class="w-100 btn btn-lg btn-primary" type="submit" id="btn" onclick="validate()">Sign in</button>
+            <a href="menu.html">Menu</a>
+
+            <p class="mt-5 mb-3 text-muted">© OI Admin - 2021</p>
+        </form>
+    </main>
+</body>
+
+<script>
+    var mysql = require("mysql");
+
+    var connection = mysql.createConnection({
+        host: "localhost",
+        user: "root",
+        password: "admin",
+        database: "bhl_clothes"
+    });
+
+    connection.connect((err) => {
+        if (err) {
+            return console.log(err.stack);
+        }
+        console.log("Connection successfully established");
+    });
+
+    function validate() {
+        var email = document.getElementById("inputEmail").value;
+        var password = document.getElementById("inputPassword").value;
+
+        if (email == "email@email" && password == "password") {
+            console.log("Connexion réussi");
+            window.location = "menu.html";
+            return false;
+        } else {
+            alert("ATTENTION: Les identifiants ne sont pas correct !");
+            return false;
+        }
+    }
+</script>
