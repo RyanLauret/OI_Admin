@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>BETA</title>
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="Datatable/DataTables-1.10.24/css/jquery.dataTables.min.css">
+        <link rel="stylesheet" href="css/produits.css">
+        <script>window.$ = window.jQuery = require('jquery');</script>
+        <script src="Datatable/datatables.min.js"></script>
+
+    </head>
+
+    <body>
+        <a href="menu.html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="4em" height="4em" fill="currentColor" class="bi bi-arrow-bar-left text-primary" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M12.5 15a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5zM10 8a.5.5 0 0 1-.5.5H3.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L3.707 7.5H9.5a.5.5 0 0 1 .5.5z"/>
+          </svg>
+        </a>
+        <h1>Liste des articles</h1>
+        
+        <div class="container">
+        <table id="table_id" class="table table-hover ">
+            <thead class="table-dark">
+                <tr>
+                    <th>Image</th>
+                    <th>Nom</th>
+                    <th>Description</th>
+                    <th>Catégorie</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody class="tbody">
+                
+            </tbody>
+        </table>
+    </div>
+
+        
+    <script src="produits.js"></script>
+    </body>
+</html>
+
